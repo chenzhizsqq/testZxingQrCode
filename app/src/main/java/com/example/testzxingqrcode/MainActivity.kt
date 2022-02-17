@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         scanCode()
     }
 
+    //扫二维码
     private fun scanCode() {
         val scan_btn = findViewById<Button>(R.id.scan_btn)        //スキャンボタン
 
@@ -37,6 +38,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    //扫二维码后获取的结果
     override fun onActivityResult(
         requestCode: Int,
         resultCode: Int,
@@ -61,6 +63,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    //做二维码
     private fun makeCode() {
         val qr_code = findViewById<ImageView>(R.id.qr_code)
         val qr_et = findViewById<EditText>(R.id.qr_et)
